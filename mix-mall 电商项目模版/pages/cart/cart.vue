@@ -208,6 +208,7 @@
 			//请求数据
 			async loadData() {
 				const that = this;
+				console.log(this)
 				goodsCarList().then(res => {
 					if(res.code == 200) {
 						that.tjGoodsModuleNum = res.data.tjGoodsModuleNum;
